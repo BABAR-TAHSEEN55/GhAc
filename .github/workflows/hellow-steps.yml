@@ -1,6 +1,6 @@
 name: Step Types
 
-on: push
+on: workflow_dispatch
 
 jobs:
   say-hello-inline-bash:
