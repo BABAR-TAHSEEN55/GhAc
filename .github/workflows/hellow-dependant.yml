@@ -9,7 +9,7 @@ jobs:
       - run: echo "One Piece is Real!!!!"
 
   say-Lotm-is-goated:
-    runs-on: macos-13
+    runs-on: ubuntu-22.04
     needs: say-one-piece
     steps:
       - run: echo "Lotm is the best piece of fiction ever written"
