@@ -15,7 +15,7 @@ jobs:
       - run: echo "Lotm is the best piece of fiction ever written"
 
   say-Farhan-is-goated:
-    runs-on: macos-13
+    runs-on: ubuntu-22.04
     steps:
       - run: echo "Farhan is the GOATED"
 
@@ -24,6 +24,6 @@ jobs:
       - say-Farhan-is-goated
       - say-one-piece
       - say-Lotm-is-goated
-    runs-on: macos-13
+    runs-on: ubuntu-22.04
     steps:
       - run: echo "Babar is the GOATED"
