@@ -1,0 +1,29 @@
+name: Dependant Steps
+
+on: push
+
+jobs:
+  say-one-piece:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "One Piece is Real!!!!"
+
+  say-Lotm-is-goated:
+    runs-on: macos-13
+    needs: say-one-piece
+    steps:
+      - run: echo "Lotm is the best piece of fiction ever written"
+
+  say-Farhan-is-goated:
+    runs-on: macos-13
+    steps:
+      - run: echo "Farhan is the GOATED"
+
+  say-Babar-is-goated:
+    needs:
+      - say-Farhan-is-goated
+      - say-one-piece
+      - say-Lotm-is-goated
+    runs-on: macos-13
+    steps:
+      - run: echo "Babar is the GOATED"
