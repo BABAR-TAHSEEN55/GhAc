@@ -22,7 +22,7 @@ jobs:
       - name: Dump Event JSON 
         run: | 
           echo "$github_event_name Paylod"
-          cat "$github_event_path"
+          # cat "$github_event_path"
 
 
           # Checking if this Works
