@@ -1,0 +1,26 @@
+name: Triggering Events
+
+on:
+  push:
+    branches:
+      - "dev/*"
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    # paths: 
+    #   -
+
+  workflow_dispatch: 
+
+jobs:
+  echo-event:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Dump Event JSON 
+        run: | 
+          echo "$github_event_name Paylod"
+          cat "$github_event_path"
+
