@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: Dump Event JSON 
         run: | 
-          echo "$github_event_name Paylod"
-          cat "$github_event_path"
+           echo "Event: ${{ github.event_name }}"
+            echo "Branch: ${{ github.ref }}"
 
+          # Checking if this Works
