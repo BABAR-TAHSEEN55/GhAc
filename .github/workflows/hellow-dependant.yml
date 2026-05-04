@@ -1,6 +1,6 @@
 name: Dependant Steps
 
-on: push
+on: workflow_dispatch
 
 jobs:
   say-one-piece:
